@@ -7,4 +7,13 @@ $settings = [
     'password' => 'e09rg7be90g87sdf',
 ];
 
-return $settings['username'] . ':' . $settings['password'] . '@' . $settings['host'] . ':' . $settings['port'];
+/*$settings = [
+    'hostname' => 'localhost',
+    'port' => 3128,
+];*/
+
+$url = isset($settings['username']) && isset($settings['password'])?
+    $settings['username'] . ':' . $settings['password'] . '@' . $settings['host'] . ':' . $settings['port']:
+    $settings['host'] . ':' . $settings['port'];
+
+return $url;

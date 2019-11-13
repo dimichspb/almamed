@@ -15,8 +15,8 @@ $params = [
 
 ob_start();
 try {
-    $response = $client->post('http://5.104.236.197:777/oauth/token', [
-        'form_params' => $params,
+    $response = $client->get('http://5.104.236.197:22999/services/Help', [
+        //'form_params' => $params,
         'proxy' => $proxy,
         'debug' => true,
     ]);
