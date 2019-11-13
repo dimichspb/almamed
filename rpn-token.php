@@ -29,11 +29,11 @@ ob_end_clean();
 <body>
 <div style="width: 100%;">
     <label for="verbose">Verbose:</label>
-    <textarea id="verbose" readonly><?= $verbose ?></textarea>
+    <textarea id="verbose" rows="10" readonly style="width: 100%"><?= $verbose ?></textarea>
 </div>
 <div style="width: 100%;">
     <label for="body">Body:</label>
-    <textarea id="body"><?= $body ?></textarea>
+    <textarea id="body" rows="30" readonly style="width: 100%;"><?= $body ?></textarea>
 </div>
 </body>
 </html>
