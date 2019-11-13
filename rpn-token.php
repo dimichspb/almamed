@@ -24,6 +24,7 @@ try {
 } catch (ClientException $exception) {
     $body = $exception->getResponse()->getBody()->getContents();
 } catch (\Exception $exception) {
+    var_dump($exception);
     $body = $exception->getMessage();
 }
 $verbose = ob_get_contents();
