@@ -3,7 +3,7 @@
 require ("vendor/autoload.php");
 $proxy = require ("proxy.php");
 
-use GuzzleHttp\Exception\ClientException;?
+use GuzzleHttp\Exception\ClientException;
 
 $client = new GuzzleHttp\Client();
 
