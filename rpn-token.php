@@ -3,7 +3,7 @@
 require ("vendor/autoload.php");
 $proxy = require ("proxy.php");
 
-use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\RequestException;
 
 $client = new GuzzleHttp\Client();
 
@@ -21,10 +21,9 @@ try {
         'debug' => true,
     ]);
     $body = $response->getBody()->getContents();
-} catch (ClientException $exception) {
+} catch (RequestException $exception) {
     $body = $exception->getResponse()->getBody()->getContents();
 } catch (\Exception $exception) {
-    var_dump($exception);
     $body = $exception->getMessage();
 }
 $verbose = ob_get_contents();
