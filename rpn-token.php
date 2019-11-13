@@ -14,6 +14,7 @@ $params = [
 $response = $client->post('http://5.104.236.197:777/oauth/token', [
     'form_params' => $params,
     'proxy' => $proxy,
+    'debug' => true,
 ]);
 
 echo $response->getBody();
