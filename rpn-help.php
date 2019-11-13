@@ -19,6 +19,7 @@ try {
         //'form_params' => $params,
         'proxy' => $proxy,
         'debug' => true,
+        'verify' => false,
     ]);
     $body = $response->getBody()->getContents();
 } catch (RequestException $exception) {
