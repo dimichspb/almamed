@@ -15,7 +15,7 @@ $params = [
 
 ob_start();
 try {
-    $response = $client->get('http://5.104.236.197:777', [
+    $response = $client->get('https://www.eisz.kz', [
         //'form_params' => $params,
         'proxy' => $proxy,
         'debug' => true,
