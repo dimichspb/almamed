@@ -20,7 +20,7 @@ ob_start();
 try {
     $response = $client->post('http://5.104.236.197:777/oauth/token', [
         'form_params' => $params,
-        //'proxy' => $proxy,
+        'proxy' => $proxy,
         'debug' => true,
     ]);
     $body = $response->getBody()->getContents();
