@@ -11,6 +11,9 @@ $params = [
     'username' => '850829324948',
     'password' => '123456',
     'grant_type' => 'password',
+    'scope' => 'profile',
+    'client_id' => 'a1d9f6f9331640699cc07f2dc92a44b9',
+    'client_secret' => 'k1wn1EzRuFGOxgbrumNO7oAmCJcUmAWIcU1f+jMnjKs=',
 ];
 
 ob_start();
